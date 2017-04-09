@@ -52,3 +52,6 @@
     Output:
         (int) 9
 """
+
+def answer(dimensions, captain_position, badguy_position, distance):
+    # Code here
