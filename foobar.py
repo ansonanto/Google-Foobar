@@ -21,4 +21,15 @@ result = []
 for i, c in enumerate(base64.b64decode(MESSAGE)):
     result.append(chr(ord(c) ^ ord(KEY[i % len(KEY)])))
 
-print ''.join(result)
+print (''.join(result))
+
+'''
+    result = {
+        'success' : 'great', 
+        'colleague' : 'esteemed', 
+        'efforts' : 'incredible', 
+        'achievement' : 'unlocked', 
+        'rabbits' : 'safe', 
+        'foo' : 'win!'
+    }
+'''
