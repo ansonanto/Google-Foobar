@@ -37,14 +37,11 @@
 """
 
 def answer(s):
-    alphabets = {'a':'z','b':'y','c':'x','d':'w','e':'v','f':'u','g':'t','h':'s','i':'r','j':'q','k':'p',
-            'l':'o','m':'n','n':'m','o':'l','p':'k','q':'j','r':'i','s':'h','t':'g','u':'f','v':'e',
-            'w':'d','x':'c','y':'b','z':'a', ' ': ' '}
     toBeConverted = list(s)
     output = ''
     for i in toBeConverted:
-        if i in alphabets: i = alphabets[i]
-        elif i not in alphabets: i = i
+        if ord(i) in range(96, 123): i = chr(97+(26-(ord(i)-97)-1))
+        elif i not in range(96, 123): i = i
         else: i = ' '
         output = output + i
     return str(output)
