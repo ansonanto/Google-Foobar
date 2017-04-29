@@ -40,8 +40,8 @@ def answer(s):
     toBeConverted = list(s)
     output = ''
     for i in toBeConverted:
-        if ord(i) in range(96, 123): i = chr(97+(26-(ord(i)-97)-1))
-        elif i not in range(96, 123): i = i
+        if ord(i) in range(97, 123): i = chr(97+(26-(ord(i)-97)-1))
+        elif i not in range(97, 123): i = i
         else: i = ' '
         output = output + i
     return str(output)
